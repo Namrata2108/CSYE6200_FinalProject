@@ -1,11 +1,11 @@
 package edu.neu.cyse6200.objects;
 
-import java.sql.Date;
-import java.util.List;
+import java.util.Calendar;
+import java.util.Date;
 
 public class Immunization {
 	private String vaccineName;
-	private List<Date> datesOfVaccination;
+	private Calendar dateOfVaccination;
 	private int frequency;
 	
 	public String getVaccineName() {
@@ -14,11 +14,11 @@ public class Immunization {
 	public void setVaccineName(String vaccineName) {
 		this.vaccineName = vaccineName;
 	}
-	public List<Date> getDatesOfVaccination() {
-		return datesOfVaccination;
+	public Calendar getDatesOfVaccination() {
+		return dateOfVaccination;
 	}
-	public void setDatesOfVaccination(List<Date> datesOfVaccination) {
-		this.datesOfVaccination = datesOfVaccination;
+	public void setDatesOfVaccination(Calendar dateOfVaccination) {
+		this.dateOfVaccination = dateOfVaccination;
 	}
 	public int getFrequency() {
 		return frequency;
